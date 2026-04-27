@@ -2,14 +2,14 @@
 echo "<h1>¡Hola Dario, Apache está leyendo mi carpeta correctamente!</h1>";
 
 function semaforo_a($color){
-    if ($color = "rojo") {
-        "Frene";
-    }elseif ($color = "amarillo") {
-        "Precaución";
-    }elseif ($color = "verde") {
-        "Avance";
+    if ($color == "rojo") {
+        return "frene";
+    }elseif ($color == "amarillo") {
+        return "precaución";
+    }elseif ($color == "verde") {
+        return "avance";
     }else {
-        "estado desconocido";
+        return "estado desconocido";
     }
 }
 $colorDesdeGet = $_GET['color'];
