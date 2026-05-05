@@ -5,13 +5,20 @@ include_once'./ejercicios/ejercicio1c.php';
 include_once'./ejercicios/ejercicio2a.php';
 include_once'./ejercicios/ejercicio2b.php';
 include_once'./ejercicios/ejercicio3.php';
+include_once'./ejercicios/ejercicio4.php';
 
 echo "<h1>Ejercicios Trabajo Prćtico</h1>";
 
-echo "<h2>Ejercicio 3: Concatener texto</h2>";
-
 $valorA = $_GET['a'];
 $valorB = $_GET['b'];
+
+echo "<h2>Ejercicio 4: Incrementar variable por referencia</h2>";
+$variable = $valorA;
+echo "<h3>Valor inicial: $variable</h3>";
+incrementar($variable);
+echo "<h3>Valor después de incrementar: $variable</h3>";
+
+echo "<h2>Ejercicio 3: Concatener texto</h2>";
 $textoConcatenado = concatenarTexto($valorA,$valorB);
 echo "<h3>Texto resultado es: $textoConcatenado</h3>";
 
